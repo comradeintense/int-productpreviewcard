@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<title>Frontend Mentor | Product preview card component</title>
+	</head>
+	<body class="bg-cream font-montserrat font-medium text-[0.875rem] text-darkGrayishblue md:flex md:justify-center md:items-center md:min-h-screen">
+		<main class="px-4 py-[1.75rem] md:px-0 md:py-0">
+			<article class="overflow-hidden bg-white rounded-xl md:max-w-[600px] md:max-h-[450px] md:grid md:grid-cols-2">
+				<picture class="">
+					<source media="(min-width: 768px)" srcset="/image-product-desktop.jpg" />
+					<img class="w-full" src="/image-product-mobile.jpg" alt="Close up photo of Gabrielle Eau de Parfum" />
+				</picture>
+				<section class="py-6 md:p-[32px] px-6">
+					<p class="uppercase tracking-[5px] text-[0.8125rem]">Perfume</p>
+					<h1 class="font-fraunces text-veryDarkblue leading-[1] text-[2rem] mt-2 md:mt-[18px]">Gabrielle Essence Eau De Parfum</h1>
+					<p class="leading-[1.7] mt-4 md:mt-6 md:leading-[1.6]">
+						A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+					</p>
+					<div class="flex items-center gap-4 mt-4 md:mt-6">
+						<span class="sr-only">Current price:</span>
+						<p class="font-fraunces text-darkCyan text-[2rem]">$149.99</p>
+						<span class="sr-only">Original price:</span>
+						<p class=""><s>$169.99</s></p>
+					</div>
+					<div
+						class="flex items-center justify-center w-full rounded-md py-[1rem] bg-darkCyan hover:bg-[#1a4031] text-white gap-2 cursor-pointer font-bold mt-2 md:mt-4"
+					>
+						<img src="/icon-cart.svg" alt="" />
+						<button type="button" href="#">Add to Cart</button>
+					</div>
+				</section>
+			</article>
+		</main>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
